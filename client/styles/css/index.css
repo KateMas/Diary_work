@@ -5516,9 +5516,9 @@ body {
 
 /* line 1, ../scss/widgets/_header.scss */
 header {
+  position: fixed;
   z-index: 1;
   width: 100%;
-  position: fixed;
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -5548,7 +5548,7 @@ header .background-header .rubber .menu {
   user-select: none;
   cursor: default;
 }
-/* line 17, ../scss/widgets/_header.scss */
+/* line 16, ../scss/widgets/_header.scss */
 header .background-header .rubber .menu button {
   width: 56px;
   height: 56px;
@@ -5560,9 +5560,16 @@ header .background-header .rubber .menu button {
   background-color: transparent;
   border: none;
   outline: none;
-  .color-background-color: #4ccde8;
 }
-/* line 34, ../scss/widgets/_header.scss */
+/* line 28, ../scss/widgets/_header.scss */
+header .background-header .rubber .menu button .color {
+  background-color: #4ccde8;
+}
+/* line 31, ../scss/widgets/_header.scss */
+header .background-header .rubber .menu button .collapsed {
+  background-color: transparent;
+}
+/* line 36, ../scss/widgets/_header.scss */
 header .background-header .rubber .information {
   background-color: rgba(99, 99, 99, 0.7);
 }
@@ -5575,91 +5582,91 @@ header .background-header .rubber .information:before, header .background-header
 header .background-header .rubber .information:after {
   clear: both;
 }
-/* line 37, ../scss/widgets/_header.scss */
+/* line 39, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .diary {
   float: left;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 16px;
   padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 56px;
 }
-/* line 44, ../scss/widgets/_header.scss */
+/* line 46, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .diary a {
   color: #ffffff;
 }
-/* line 46, ../scss/widgets/_header.scss */
+/* line 48, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .diary a:focus {
   background-color: transparent;
 }
-/* line 49, ../scss/widgets/_header.scss */
+/* line 51, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .diary a:hover {
   background-color: transparent;
   border: none;
   text-decoration: underline;
 }
-/* line 56, ../scss/widgets/_header.scss */
+/* line 58, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .date {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   height: 19px;
-  text-align: center;
   line-height: 56px;
+  text-align: center;
 }
-/* line 64, ../scss/widgets/_header.scss */
+/* line 66, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .date a {
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: bold;
   color: #ffffff;
   -webkit-transition-property: text-decoration;
   transition-property: text-decoration;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 71, ../scss/widgets/_header.scss */
+/* line 73, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .date a:hover {
   text-decoration: underline;
 }
-/* line 74, ../scss/widgets/_header.scss */
+/* line 76, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .date a:first-child {
   margin-right: 8px;
 }
-/* line 79, ../scss/widgets/_header.scss */
+/* line 81, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options {
   float: right;
   margin-bottom: 0;
   font-size: 0;
 }
-/* line 84, ../scss/widgets/_header.scss */
+/* line 85, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li {
   display: inline-block;
   width: 34px;
   height: 56px;
   padding-top: 21px;
-  vertical-align: middle;
   outline: none;
+  vertical-align: middle;
 }
-/* line 92, ../scss/widgets/_header.scss */
+/* line 93, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li a:hover {
   background: none;
 }
-/* line 95, ../scss/widgets/_header.scss */
+/* line 96, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li a:focus {
   background: none;
 }
-/* line 100, ../scss/widgets/_header.scss */
+/* line 101, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:first-child .add {
   padding: 0;
 }
-/* line 102, ../scss/widgets/_header.scss */
+/* line 103, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:first-child .add .svg-add {
   width: 14px;
   height: 14px;
 }
-/* line 105, ../scss/widgets/_header.scss */
+/* line 106, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:first-child .add .svg-add polygon {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -5667,25 +5674,25 @@ header .background-header .rubber .information .options li:first-child .add .svg
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 111, ../scss/widgets/_header.scss */
+/* line 112, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:first-child .add .svg-add:hover polygon {
   fill: #ffffff;
 }
-/* line 119, ../scss/widgets/_header.scss */
+/* line 120, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:nth-child(2) .month {
   display: block;
-  text-indent: -9999px;
   width: 14px;
   height: 14px;
   background: url(../../../client/images/header/icon/month.svg);
   background-size: 14px 14px;
   background-repeat: no-repeat;
+  text-indent: -9999px;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 129, ../scss/widgets/_header.scss */
+/* line 130, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:nth-child(2) .month:hover {
   width: 14px;
   height: 14px;
@@ -5693,19 +5700,19 @@ header .background-header .rubber .information .options li:nth-child(2) .month:h
   background-size: 14px 14px;
   background-repeat: no-repeat;
 }
-/* line 139, ../scss/widgets/_header.scss */
+/* line 140, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:nth-child(3) .search {
   display: block;
-  padding: 0;
   width: 14px;
   height: 14px;
+  padding: 0;
 }
-/* line 144, ../scss/widgets/_header.scss */
+/* line 145, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:nth-child(3) .search .svg-search {
   width: 14px;
   height: 14px;
 }
-/* line 147, ../scss/widgets/_header.scss */
+/* line 148, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:nth-child(3) .search .svg-search .path-color {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -5713,103 +5720,144 @@ header .background-header .rubber .information .options li:nth-child(3) .search 
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 153, ../scss/widgets/_header.scss */
+/* line 154, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:nth-child(3) .search .svg-search:hover .path-color {
   fill: #ffffff;
 }
-/* line 160, ../scss/widgets/_header.scss */
+/* line 161, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:nth-child(4) {
-  /* .notification {
-  	padding:0;
-  	display: block;
-  	width: 14px;
-  	height: 14px;
-  	.svg-notification {
-  		width: 14px;
-  	   	height: 14px;
-  	   	path {
-  	  		fill:#4ccde8;
-  	  		@include transition-property(all);
-  	  		@include transition-duration(200ms);
-  	  	}
-  		&:hover {
-  		  path {
-  	  			fill:#ffffff;
-  	  		}	
-  		}
-  	}
-  }  */
+  /* .notification-active {
+      position: relative;
+      display: block;
+      width: 14px;
+      height: 14px;
+      padding:0;                              
+      .svg-notification {                                 
+          width: 14px;
+          height: 14px;
+          path {
+              fill:#09e903;
+          }
+      } 
+       sup {
+          position:absolute;
+          top:-7px;
+          right: -6px;
+          display: block;
+          width: 15px;
+          height: 15px;                                   
+          background-color: #09e903;
+          border: 2px solid #6c6c6c;  
+          font-family: 'Roboto', sans-serif;                              
+          font-size: 10px;                                    
+          font-weight: bold;
+          text-align: center;
+          vertical-align: super;  
+          line-height: 11px;
+          color: #383838;
+          content: "2";
+          @include border-radius(50%) 
+      } */
+  /* &::before {
+      position:absolute;
+      top:-5px;
+      right: -4px;
+      display: block;
+      width: 13px;
+      height: 13px;                                   
+      background-color: #09e903;
+      border: 2px solid #6c6c6c;
+      content: "";
+      @include border-radius(50%);
+  }                           
+  &::after {
+      position:absolute;
+      top:-6px;
+      right: -4px;
+      display: block;
+      width: 13px;
+      height: 13px;                                   
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      font-weight: bold;
+      text-align: center;                                     
+      content: '2';   
+      color: #000000;                                 
+  }        */
 }
-/* line 181, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification-active {
-  position: relative;
-  padding: 0;
+/* line 162, ../scss/widgets/_header.scss */
+header .background-header .rubber .information .options li:nth-child(4) .notification {
   display: block;
   width: 14px;
   height: 14px;
-  					/* sup {
-  						position:absolute;
-  						top:-7px;
-  						right: -6px;
-  						width: 15px;
-  						height: 15px;
-  						border: 2px solid #6c6c6c;
-  						background-color: #09e903;								
-  						vertical-align: super;
-  						font-size: 10px;
-  						font-family: 'Roboto', sans-serif;
-              			font-weight: bold;
-              			text-align: center;	
-              			line-height: 11px;
-              			color: #383838;
-              			@include border-radius(50%)	
-  					} */
+  padding: 0;
 }
-/* line 187, ../scss/widgets/_header.scss */
+/* line 167, ../scss/widgets/_header.scss */
+header .background-header .rubber .information .options li:nth-child(4) .notification .svg-notification {
+  width: 14px;
+  height: 14px;
+}
+/* line 170, ../scss/widgets/_header.scss */
+header .background-header .rubber .information .options li:nth-child(4) .notification .svg-notification path {
+  fill: #4ccde8;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+/* line 176, ../scss/widgets/_header.scss */
+header .background-header .rubber .information .options li:nth-child(4) .notification .svg-notification:hover path {
+  fill: #ffffff;
+}
+/* line 182, ../scss/widgets/_header.scss */
+header .background-header .rubber .information .options li:nth-child(4) .notification-active {
+  position: relative;
+  display: block;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+}
+/* line 188, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:nth-child(4) .notification-active .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 190, ../scss/widgets/_header.scss */
+/* line 191, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:nth-child(4) .notification-active .svg-notification path {
   fill: #09e903;
 }
-/* line 211, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification-active::before {
+/* line 195, ../scss/widgets/_header.scss */
+header .background-header .rubber .information .options li:nth-child(4) .notification-active .svg-notification:hover path {
+  fill: #09e903;
+}
+/* line 200, ../scss/widgets/_header.scss */
+header .background-header .rubber .information .options li:nth-child(4) .notification-active sup {
   position: absolute;
-  top: -5px;
-  right: -4px;
+  top: -7px;
+  right: -6px;
   display: block;
-  width: 13px;
-  height: 13px;
-  border: 2px solid #6c6c6c;
+  width: 15px;
+  height: 15px;
   background-color: #09e903;
-  content: "";
+  border: 2px solid #6c6c6c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: super;
+  line-height: 11px;
+  color: #383838;
+  content: "2";
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 223, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification-active::after {
-  position: absolute;
-  top: -6px;
-  right: -4px;
-  display: block;
-  width: 13px;
-  height: 13px;
-  font-size: 10px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  color: #000000;
-  content: '2';
-}
-/* line 239, ../scss/widgets/_header.scss */
+/* line 280, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:last-child {
   width: 56px;
   padding-top: 0px;
 }
-/* line 242, ../scss/widgets/_header.scss */
+/* line 283, ../scss/widgets/_header.scss */
 header .background-header .rubber .information .options li:last-child a {
   width: 56px;
   height: 56px;
