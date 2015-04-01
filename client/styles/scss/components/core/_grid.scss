@@ -1,0 +1,42 @@
+.custom-container {
+	@include breakpoint(extra-small) {
+		padding-right:40px;
+		padding-left:40px;
+	}
+	.custom-row {
+		@include breakpoint(large) {
+			@include make-row(30px);
+		}
+		@include breakpoint(medium) {
+			@include make-row(20px);
+		}
+		@include breakpoint(small) {
+			@include make-row(20px);
+		}
+		@include breakpoint(extra-small) {
+			@include make-row(20px);
+		}
+		@for $i from 1 through 12 {
+			.cus-col-lg-#{$i} {
+				@include breakpoint(large) {
+					@include make-lg-column($i, 30px);				
+				}
+			}
+			.cus-col-md-#{$i} {				
+				@include breakpoint(medium) {
+					@include make-md-column($i, 20px);
+				}				
+			}
+			.cus-col-sm-#{$i} {
+				@include breakpoint(small){
+					@include make-sm-column($i, 20px);
+				}					
+			}
+			.cus-col-xs-#{$i} {
+				@include breakpoint(extra-small) {
+					@include make-xs-column($i, 20px);
+				}					
+			}			
+		}
+	}			
+}

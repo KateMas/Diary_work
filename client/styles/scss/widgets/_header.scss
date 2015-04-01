@@ -1,0 +1,253 @@
+header {
+	z-index: 1;
+	width: 100%;
+    position: fixed;    
+    @include user-select(none);
+    .background-header {
+    	.rubber {
+	        @include clearfix;
+	        .menu {
+	            float: left;
+				width: 56px;
+				height: 56px;
+				//background-color: #4ccde8;
+				text-align: center;			
+				
+				@include user-select(none);								
+	            button {
+	                width: 56px;
+	                height: 56px;
+	                //margin-top: 20px;
+	                padding: 0;
+	                background-image: url(../../../client/images/header/icon/menu.svg);
+	                background-repeat: no-repeat;
+	                background-size: 14px 14px;
+	                background-position: 21px 21px;
+	                background-color: transparent;
+	                border:none;
+	                outline:none;
+	                .color: {
+						background-color: #4ccde8;
+					}  
+	            }
+	        }
+	        .information {
+	        	background-color: rgba(#636363,0.7);
+	            @include clearfix;
+	            .diary {
+	            	float: left;
+	            	font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    font-size: 16px;
+                	padding:0 20px;
+                	line-height: 56px;
+                	a {
+	                	color: #ffffff;
+	                	&:focus {
+		                    	background-color: transparent;
+		                    }
+	                    &:hover {
+	                    	background-color: transparent;
+	                    	border:none;
+	                    	text-decoration: underline;
+	                    }	
+	                }                	
+	            }
+	            .date { 
+	            	position:absolute;
+	            	top: 0; 
+	            	right:0;
+	            	left: 0; 
+	            	height: 19px;
+	            	text-align:center; 
+	            	line-height: 56px;
+	            	a {
+	            		font-family: 'Roboto', sans-serif;
+	                    font-weight: bold;
+	                    font-size: 16px;
+	            		color: #ffffff;
+	            		@include transition-property(text-decoration);
+						@include transition-duration(200ms);
+	            		&:hover {
+	            			text-decoration: underline;
+	            		}
+	            		&:first-child {
+	            			margin-right:8px;
+	            		}
+	            	}
+	            }
+	            .options {
+					float: right;
+					margin-bottom: 0;
+					font-size: 0;
+					
+					li {
+						display: inline-block;	
+						width: 34px;	
+						height: 56px;
+						padding-top:21px;			
+						vertical-align: middle;
+						outline:none;
+						a {
+							&:hover {
+								background:none;
+							}
+							&:focus {
+								background:none;
+							}
+						}
+						&:first-child {
+							.add {	
+								padding:0;						 
+								.svg-add {
+									width: 14px;
+									height: 14px;
+									polygon {
+								  		fill:#4ccde8;
+								  		@include transition-property(all);
+								  		@include transition-duration(200ms);
+								  	}								  	
+								  	&:hover {
+								  		polygon {
+								  			fill:#ffffff;
+								  		}
+								  	}
+								}  
+							}
+						}
+						&:nth-child(2) {
+							.month {
+								display: block;
+								text-indent: -9999px;
+								width: 14px;
+								height: 14px;
+								background: url(../../../client/images/header/icon/month.svg);
+								background-size: 14px 14px;
+								background-repeat: no-repeat;
+								@include transition-property(all);
+								@include transition-duration(200ms);
+								&:hover {
+								  	width: 14px;
+								  	height: 14px;
+								  	background: url(../../../client/images/header/icon/month1.svg);
+								  	background-size: 14px 14px;
+								  	background-repeat: no-repeat;
+								  }
+							}
+						}
+						&:nth-child(3) {
+							.search {
+								display: block;
+								padding: 0;
+								width: 14px;
+								height: 14px;
+								.svg-search {
+									width: 14px;
+								   	height: 14px;
+								   	.path-color {
+								  		fill:#4ccde8;
+								  		@include transition-property(all);
+								  		@include transition-duration(200ms);
+								  	}
+									&:hover {
+									  .path-color {
+								  			fill:#ffffff;
+								  		}	
+									}
+								}	
+							}
+						}
+						&:nth-child(4) {
+							/* .notification {
+								padding:0;
+								display: block;
+								width: 14px;
+								height: 14px;
+								.svg-notification {
+									width: 14px;
+								   	height: 14px;
+								   	path {
+								  		fill:#4ccde8;
+								  		@include transition-property(all);
+								  		@include transition-duration(200ms);
+								  	}
+									&:hover {
+									  path {
+								  			fill:#ffffff;
+								  		}	
+									}
+								}
+							}  */	
+							.notification-active {
+								position: relative;
+								padding:0;
+								display: block;
+								width: 14px;
+								height: 14px;
+								.svg-notification {									
+									width: 14px;
+								   	height: 14px;
+								   	path {
+								  		fill:#09e903;
+								  	}
+								} 
+								/* sup {
+									position:absolute;
+									top:-7px;
+									right: -6px;
+									width: 15px;
+									height: 15px;
+									border: 2px solid #6c6c6c;
+									background-color: #09e903;								
+									vertical-align: super;
+									font-size: 10px;
+									font-family: 'Roboto', sans-serif;
+			            			font-weight: bold;
+			            			text-align: center;	
+			            			line-height: 11px;
+			            			color: #383838;
+			            			@include border-radius(50%)	
+								} */	
+								&::before {
+									position:absolute;
+									top:-5px;
+									right: -4px;
+									display: block;
+									width: 13px;
+									height: 13px;
+									border: 2px solid #6c6c6c;
+									background-color: #09e903;
+									content: "";
+									@include border-radius(50%);
+								}							
+ 								&::after {
+										position:absolute;
+										top:-6px;
+										right: -4px;
+										display: block;
+										width: 13px;
+										height: 13px;										
+										font-size: 10px;
+										font-family: 'Roboto', sans-serif;
+		                    			font-weight: bold;
+		                    			text-align: center;
+		                    			color: #000000;
+										content: '2';										
+									}							 									
+							}
+						}
+						&:last-child {
+							width: 56px;
+							padding-top:0px;
+							a {
+								width: 56px;
+								height: 56px;
+								background-image: url(../../../client/images/header/person.png);
+							}	
+						}
+			        }
+			    }    
+    		}
+    	}
+    }		
+}
