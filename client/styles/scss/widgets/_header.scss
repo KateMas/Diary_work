@@ -15,16 +15,19 @@ header {
               border:none;
               outline:none;              
             }
+            .collapsed {
+                background-color: red;
+            }
             .color-button {
                 background-color: #4ccde8;
-            }
+            }             
         }
         .information {
             float: left;
             width: 100%;
             background-color: rgba(#636363,0.7);
             @include box-sizing(border-box);
-            @include clearfix;
+            @include clearfix;            
             .all-info {
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;  
