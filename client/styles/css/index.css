@@ -5514,6 +5514,18 @@ body {
   }
 }
 
+/* line 1, ../scss/widgets/_header.scss */
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
 /* line 14, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 header .spec:before, header .spec:after {
   content: " ";
@@ -5523,11 +5535,11 @@ header .spec:before, header .spec:after {
 header .spec:after {
   clear: both;
 }
-/* line 4, ../scss/widgets/_header.scss */
+/* line 8, ../scss/widgets/_header.scss */
 header .spec .menu {
   float: left;
 }
-/* line 6, ../scss/widgets/_header.scss */
+/* line 10, ../scss/widgets/_header.scss */
 header .spec .menu button {
   width: 56px;
   height: 56px;
@@ -5540,34 +5552,32 @@ header .spec .menu button {
   border: none;
   outline: none;
 }
-/* line 18, ../scss/widgets/_header.scss */
+/* line 22, ../scss/widgets/_header.scss */
 header .spec .menu .collapsed {
   background-color: transparent;
 }
-/* line 23, ../scss/widgets/_header.scss */
+/* line 27, ../scss/widgets/_header.scss */
 header .spec .information {
-  float: left;
-  width: 100%;
   background-color: rgba(99, 99, 99, 0.7);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 14, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-header .spec .information:before, header .spec .information:after {
-  content: " ";
-  display: table;
-}
-/* line 19, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-header .spec .information:after {
-  clear: both;
-}
-/* line 29, ../scss/widgets/_header.scss */
+/* line 32, ../scss/widgets/_header.scss */
 header .spec .information .all-info {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
-/* line 32, ../scss/widgets/_header.scss */
+/* line 14, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+header .spec .information .all-info:before, header .spec .information .all-info:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+header .spec .information .all-info:after {
+  clear: both;
+}
+/* line 36, ../scss/widgets/_header.scss */
 header .spec .information .all-info .diary {
   float: left;
   width: 10%;
@@ -5576,33 +5586,33 @@ header .spec .information .all-info .diary {
   line-height: 56px;
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 32, ../scss/widgets/_header.scss */
+  /* line 36, ../scss/widgets/_header.scss */
   header .spec .information .all-info .diary {
     width: 30%;
   }
 }
 @media (max-width: 767px) {
-  /* line 32, ../scss/widgets/_header.scss */
+  /* line 36, ../scss/widgets/_header.scss */
   header .spec .information .all-info .diary {
     width: 30%;
   }
 }
-/* line 44, ../scss/widgets/_header.scss */
+/* line 48, ../scss/widgets/_header.scss */
 header .spec .information .all-info .diary a {
   padding: 0px;
   color: #ffffff;
 }
-/* line 47, ../scss/widgets/_header.scss */
+/* line 51, ../scss/widgets/_header.scss */
 header .spec .information .all-info .diary a:focus {
   background-color: transparent;
 }
-/* line 50, ../scss/widgets/_header.scss */
+/* line 54, ../scss/widgets/_header.scss */
 header .spec .information .all-info .diary a:hover {
   background-color: transparent;
   border: none;
   text-decoration: underline;
 }
-/* line 57, ../scss/widgets/_header.scss */
+/* line 61, ../scss/widgets/_header.scss */
 header .spec .information .all-info .date {
   float: left;
   display: block;
@@ -5610,76 +5620,79 @@ header .spec .information .all-info .date {
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 57, ../scss/widgets/_header.scss */
+  /* line 61, ../scss/widgets/_header.scss */
   header .spec .information .all-info .date {
     display: none;
     width: auto;
   }
 }
 @media (max-width: 767px) {
-  /* line 57, ../scss/widgets/_header.scss */
+  /* line 61, ../scss/widgets/_header.scss */
   header .spec .information .all-info .date {
     display: none;
     width: auto;
   }
 }
 @media (max-width: 480px) {
-  /* line 57, ../scss/widgets/_header.scss */
+  /* line 61, ../scss/widgets/_header.scss */
   header .spec .information .all-info .date {
     display: none;
     width: auto;
   }
 }
-/* line 74, ../scss/widgets/_header.scss */
+/* line 78, ../scss/widgets/_header.scss */
 header .spec .information .all-info .date ul {
+  width: 100%;
+  padding-left: 0;
   font-size: 0;
 }
-/* line 76, ../scss/widgets/_header.scss */
+/* line 82, ../scss/widgets/_header.scss */
 header .spec .information .all-info .date ul li {
   display: inline-block;
   margin-right: 8px;
   font-size: 16px;
   line-height: 56px;
 }
-/* line 81, ../scss/widgets/_header.scss */
+/* line 87, ../scss/widgets/_header.scss */
 header .spec .information .all-info .date ul li a {
   padding: 0px;
   color: #ffffff;
 }
-/* line 84, ../scss/widgets/_header.scss */
+/* line 90, ../scss/widgets/_header.scss */
 header .spec .information .all-info .date ul li a:focus {
   background-color: transparent;
 }
-/* line 87, ../scss/widgets/_header.scss */
+/* line 93, ../scss/widgets/_header.scss */
 header .spec .information .all-info .date ul li a:hover {
   background-color: transparent;
   border: none;
   text-decoration: underline;
 }
-/* line 96, ../scss/widgets/_header.scss */
+/* line 102, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options {
   float: left;
   width: 20%;
+  display: block;
   margin-bottom: 0;
-  font-size: 0;
+  text-align: right;
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 96, ../scss/widgets/_header.scss */
+  /* line 102, ../scss/widgets/_header.scss */
   header .spec .information .all-info .options {
     width: 70%;
   }
 }
 @media (max-width: 767px) {
-  /* line 96, ../scss/widgets/_header.scss */
+  /* line 102, ../scss/widgets/_header.scss */
   header .spec .information .all-info .options {
     width: 70%;
   }
 }
-/* line 107, ../scss/widgets/_header.scss */
+/* line 114, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul {
-  text-align: right;
+  font-size: 0;
 }
-/* line 109, ../scss/widgets/_header.scss */
+/* line 116, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li {
   display: inline-block;
   width: 34px;
@@ -5688,28 +5701,28 @@ header .spec .information .all-info .options ul li {
   vertical-align: middle;
   outline: none;
 }
-/* line 117, ../scss/widgets/_header.scss */
+/* line 124, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li a:hover {
   background: none;
 }
-/* line 120, ../scss/widgets/_header.scss */
+/* line 127, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li a:focus {
   background: none;
 }
-/* line 124, ../scss/widgets/_header.scss */
+/* line 131, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:first-child {
   text-align: left;
 }
-/* line 126, ../scss/widgets/_header.scss */
+/* line 133, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:first-child .add {
   padding: 0;
 }
-/* line 128, ../scss/widgets/_header.scss */
+/* line 135, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:first-child .add .svg-add {
   width: 14px;
   height: 14px;
 }
-/* line 131, ../scss/widgets/_header.scss */
+/* line 138, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:first-child .add .svg-add polygon {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -5717,11 +5730,11 @@ header .spec .information .all-info .options ul li:first-child .add .svg-add pol
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 137, ../scss/widgets/_header.scss */
+/* line 144, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:first-child .add .svg-add:hover polygon {
   fill: #ffffff;
 }
-/* line 145, ../scss/widgets/_header.scss */
+/* line 152, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(2) .month {
   display: block;
   text-indent: -9999px;
@@ -5735,7 +5748,7 @@ header .spec .information .all-info .options ul li:nth-child(2) .month {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 155, ../scss/widgets/_header.scss */
+/* line 162, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(2) .month:hover {
   width: 14px;
   height: 14px;
@@ -5743,19 +5756,19 @@ header .spec .information .all-info .options ul li:nth-child(2) .month:hover {
   background-size: 14px 14px;
   background-repeat: no-repeat;
 }
-/* line 165, ../scss/widgets/_header.scss */
+/* line 172, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(3) .search {
   display: block;
   padding: 0;
   width: 14px;
   height: 14px;
 }
-/* line 170, ../scss/widgets/_header.scss */
+/* line 177, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(3) .search .svg-search {
   width: 14px;
   height: 14px;
 }
-/* line 173, ../scss/widgets/_header.scss */
+/* line 180, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(3) .search .svg-search .path-color {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -5763,11 +5776,11 @@ header .spec .information .all-info .options ul li:nth-child(3) .search .svg-sea
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 179, ../scss/widgets/_header.scss */
+/* line 186, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(3) .search .svg-search:hover .path-color {
   fill: #ffffff;
 }
-/* line 186, ../scss/widgets/_header.scss */
+/* line 193, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) {
   /* .notification-active {
       position: relative;
@@ -5828,19 +5841,19 @@ header .spec .information .all-info .options ul li:nth-child(4) {
       color: #000000;                                 
   }        */
 }
-/* line 187, ../scss/widgets/_header.scss */
+/* line 194, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) .notification {
   display: block;
   width: 14px;
   height: 14px;
   padding: 0;
 }
-/* line 192, ../scss/widgets/_header.scss */
+/* line 199, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) .notification .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 195, ../scss/widgets/_header.scss */
+/* line 202, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) .notification .svg-notification path {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -5848,11 +5861,11 @@ header .spec .information .all-info .options ul li:nth-child(4) .notification .s
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 201, ../scss/widgets/_header.scss */
+/* line 208, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) .notification .svg-notification:hover path {
   fill: #ffffff;
 }
-/* line 207, ../scss/widgets/_header.scss */
+/* line 214, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) .notification-active {
   position: relative;
   display: block;
@@ -5860,20 +5873,20 @@ header .spec .information .all-info .options ul li:nth-child(4) .notification-ac
   height: 14px;
   padding: 0;
 }
-/* line 213, ../scss/widgets/_header.scss */
+/* line 220, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) .notification-active .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 216, ../scss/widgets/_header.scss */
+/* line 223, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) .notification-active .svg-notification path {
   fill: #09e903;
 }
-/* line 220, ../scss/widgets/_header.scss */
+/* line 227, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) .notification-active .svg-notification:hover path {
   fill: #09e903;
 }
-/* line 225, ../scss/widgets/_header.scss */
+/* line 232, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:nth-child(4) .notification-active sup {
   position: absolute;
   top: -7px;
@@ -5895,15 +5908,16 @@ header .spec .information .all-info .options ul li:nth-child(4) .notification-ac
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 305, ../scss/widgets/_header.scss */
+/* line 312, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:last-child {
   width: 56px;
   padding-top: 0px;
 }
-/* line 308, ../scss/widgets/_header.scss */
+/* line 315, ../scss/widgets/_header.scss */
 header .spec .information .all-info .options ul li:last-child a {
   width: 56px;
   height: 56px;
+  padding: 0;
   background-image: url(../../../client/images/header/person.png);
 }
 
