@@ -2,18 +2,18 @@ header {
     .spec {
       @include clearfix;
       .menu {
-          float: left;
-          button {
-              width: 56px;
-              height: 56px;
-              padding: 0;
-              background-image: url(../../../client/images/header/icon/menu.svg);
-              background-repeat: no-repeat;
-              background-size: 14px 14px;
-              background-position: 21px 21px;
-              background-color: transparent;
-              border:none;
-              outline:none;              
+            float: left;
+            button {
+                width: 56px;
+                height: 56px;
+                padding: 0;
+                background-image: url(../../../client/images/header/icon/menu.svg);
+                background-repeat: no-repeat;
+                background-size: 14px 14px;
+                background-position: 21px 21px;
+                background-color: transparent;
+                border:none;
+                outline:none;              
             }
             .collapsed {
                 background-color: red;
@@ -30,32 +30,31 @@ header {
             @include clearfix;            
             .all-info {
                 font-family: 'Roboto', sans-serif;
-                font-weight: bold;  
-                            
+                font-weight: bold;                              
                 .diary {  
-                float: left;
-                width: 10%;
-                padding:0 20px;
-                font-size: 16px;
-                line-height: 56px;
-                @include breakpoint(small) {                    
-                    width: 30%;
-                }
-                @include breakpoint(extra-small) {                    
-                    width: 30%;
-                }
-                 a { 
-                   padding: 0px;
-                   color: #ffffff;
-                   &:focus {
-                       background-color: transparent;
-                   }
-                   &:hover {
-                       background-color: transparent;
-                       border:none;
-                       text-decoration: underline;
-                   }   
-                 }                   
+                    float: left;
+                    width: 10%;
+                    padding:0 20px;
+                    font-size: 16px;
+                    line-height: 56px;
+                    @include breakpoint(small) {                    
+                        width: 30%;
+                    }
+                    @include breakpoint(extra-small) {                    
+                        width: 30%;
+                    }
+                    a { 
+                       padding: 0px;
+                       color: #ffffff;
+                        &:focus {
+                           background-color: transparent;
+                        }
+                       &:hover {
+                           background-color: transparent;
+                           border:none;
+                           text-decoration: underline;
+                        }   
+                    }                   
                 } 
                 .date {
                     float:left;
