@@ -11,16 +11,14 @@ header {
                 background-repeat: no-repeat;
                 background-size: 14px 14px;
                 background-position: 21px 21px;
-                background-color: transparent;
+                background-color: #4ccde8;
                 border:none;
                 outline:none;              
             }
             .collapsed {
-                background-color: red;
-            }
-            .color-button {
-                background-color: #4ccde8;
-            }             
+                background-color: transparent;
+            
+            }                                    
         }
         .information {
             float: left;
@@ -66,6 +64,10 @@ header {
                         width: auto;
                     }
                      @include breakpoint(extra-small) {                    
+                        display: none;
+                        width: auto;
+                    }
+                    @include breakpoint(extra-xs-small) {                    
                         display: none;
                         width: auto;
                     }
