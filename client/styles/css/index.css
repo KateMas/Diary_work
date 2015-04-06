@@ -5527,16 +5527,16 @@ header {
   cursor: default;
 }
 /* line 14, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-header .background-header .rubber:before, header .background-header .rubber:after {
+header .rubber:before, header .rubber:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-header .background-header .rubber:after {
+header .rubber:after {
   clear: both;
 }
-/* line 9, ../scss/widgets/_header.scss */
-header .background-header .rubber .menu {
+/* line 8, ../scss/widgets/_header.scss */
+header .rubber .menu {
   float: left;
   width: 56px;
   height: 56px;
@@ -5548,8 +5548,8 @@ header .background-header .rubber .menu {
   user-select: none;
   cursor: default;
 }
-/* line 16, ../scss/widgets/_header.scss */
-header .background-header .rubber .menu button {
+/* line 14, ../scss/widgets/_header.scss */
+header .rubber .menu button {
   width: 56px;
   height: 56px;
   padding: 0;
@@ -5557,66 +5557,68 @@ header .background-header .rubber .menu button {
   background-repeat: no-repeat;
   background-size: 14px 14px;
   background-position: 21px 21px;
-  background-color: transparent;
+  background-color: #4ccde8;
   border: none;
   outline: none;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
 }
-/* line 28, ../scss/widgets/_header.scss */
-header .background-header .rubber .menu button .color {
+/* line 27, ../scss/widgets/_header.scss */
+header .rubber .menu button:hover {
   background-color: #4ccde8;
 }
 /* line 31, ../scss/widgets/_header.scss */
-header .background-header .rubber .menu button .collapsed {
+header .rubber .menu .collapsed {
   background-color: transparent;
 }
-/* line 36, ../scss/widgets/_header.scss */
-header .background-header .rubber .information {
+/* line 35, ../scss/widgets/_header.scss */
+header .rubber .information {
+  height: 56px;
   background-color: rgba(99, 99, 99, 0.7);
+  text-align: center;
 }
 /* line 14, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-header .background-header .rubber .information:before, header .background-header .rubber .information:after {
+header .rubber .information:before, header .rubber .information:after {
   content: " ";
   display: table;
 }
 /* line 19, ../../../../../../../var/lib/gems/2.1.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-header .background-header .rubber .information:after {
+header .rubber .information:after {
   clear: both;
 }
-/* line 39, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .diary {
+/* line 40, ../scss/widgets/_header.scss */
+header .rubber .information .diary {
   float: left;
-  padding: 0 20px;
+  padding-left: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 56px;
 }
-/* line 46, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .diary a {
+/* line 47, ../scss/widgets/_header.scss */
+header .rubber .information .diary a {
   color: #ffffff;
 }
-/* line 48, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .diary a:focus {
+/* line 49, ../scss/widgets/_header.scss */
+header .rubber .information .diary a:focus {
   background-color: transparent;
 }
-/* line 51, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .diary a:hover {
+/* line 52, ../scss/widgets/_header.scss */
+header .rubber .information .diary a:hover {
   background-color: transparent;
   border: none;
   text-decoration: underline;
 }
-/* line 58, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .date {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 19px;
+/* line 59, ../scss/widgets/_header.scss */
+header .rubber .information .date {
+  display: inline-block;
+  height: 56px;
   line-height: 56px;
-  text-align: center;
 }
-/* line 66, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .date a {
+/* line 63, ../scss/widgets/_header.scss */
+header .rubber .information .date a {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -5626,22 +5628,22 @@ header .background-header .rubber .information .date a {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 73, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .date a:hover {
+/* line 70, ../scss/widgets/_header.scss */
+header .rubber .information .date a:hover {
   text-decoration: underline;
 }
-/* line 76, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .date a:first-child {
+/* line 73, ../scss/widgets/_header.scss */
+header .rubber .information .date a:first-child {
   margin-right: 8px;
 }
-/* line 81, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options {
+/* line 78, ../scss/widgets/_header.scss */
+header .rubber .information .options {
   float: right;
   margin-bottom: 0;
   font-size: 0;
 }
-/* line 85, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li {
+/* line 82, ../scss/widgets/_header.scss */
+header .rubber .information .options li {
   display: inline-block;
   width: 34px;
   height: 56px;
@@ -5649,37 +5651,38 @@ header .background-header .rubber .information .options li {
   outline: none;
   vertical-align: middle;
 }
+/* line 90, ../scss/widgets/_header.scss */
+header .rubber .information .options li a:hover {
+  background: none;
+}
 /* line 93, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li a:hover {
+header .rubber .information .options li a:focus {
   background: none;
 }
-/* line 96, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li a:focus {
-  background: none;
-}
-/* line 101, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:first-child .add {
+/* line 98, ../scss/widgets/_header.scss */
+header .rubber .information .options li:first-child .add {
+  width: 14px;
   padding: 0;
 }
-/* line 103, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:first-child .add .svg-add {
+/* line 101, ../scss/widgets/_header.scss */
+header .rubber .information .options li:first-child .add .svg-add {
   width: 14px;
   height: 14px;
 }
-/* line 106, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:first-child .add .svg-add polygon {
+/* line 104, ../scss/widgets/_header.scss */
+header .rubber .information .options li:first-child .add .svg-add polygon {
   fill: #4ccde8;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 112, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:first-child .add .svg-add:hover polygon {
+/* line 110, ../scss/widgets/_header.scss */
+header .rubber .information .options li:first-child .add .svg-add:hover polygon {
   fill: #ffffff;
 }
-/* line 120, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(2) .month {
+/* line 118, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(2) .month {
   display: block;
   width: 14px;
   height: 14px;
@@ -5692,146 +5695,115 @@ header .background-header .rubber .information .options li:nth-child(2) .month {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 130, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(2) .month:hover {
+/* line 128, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(2) .month:hover {
   width: 14px;
   height: 14px;
   background: url(../../../client/images/header/icon/month1.svg);
   background-size: 14px 14px;
   background-repeat: no-repeat;
 }
-/* line 140, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(3) .search {
+/* line 138, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(3) .search {
   display: block;
   width: 14px;
   height: 14px;
   padding: 0;
 }
-/* line 145, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(3) .search .svg-search {
+/* line 143, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(3) .search .svg-search {
   width: 14px;
   height: 14px;
 }
-/* line 148, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(3) .search .svg-search .path-color {
+/* line 146, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(3) .search .svg-search .path-color {
   fill: #4ccde8;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 154, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(3) .search .svg-search:hover .path-color {
+/* line 152, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(3) .search .svg-search:hover .path-color {
   fill: #ffffff;
 }
-/* line 161, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) {
-  /* .notification-active {
-      position: relative;
-      display: block;
-      width: 14px;
-      height: 14px;
-      padding:0;                              
-      .svg-notification {                                 
-          width: 14px;
-          height: 14px;
-          path {
-              fill:#09e903;
-          }
-      } 
-       sup {
+/* line 159, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) {
+  /*     
+      &::before {
           position:absolute;
-          top:-7px;
-          right: -6px;
+          top:-5px;
+          right: -4px;
           display: block;
-          width: 15px;
-          height: 15px;                                   
+          width: 13px;
+          height: 13px;                                   
           background-color: #09e903;
-          border: 2px solid #6c6c6c;  
-          font-family: 'Roboto', sans-serif;                              
-          font-size: 10px;                                    
+          border: 2px solid #6c6c6c;
+          content: "";
+          @include border-radius(50%);
+      }                           
+      &::after {
+          position:absolute;
+          top:-6px;
+          right: -4px;
+          display: block;
+          width: 13px;
+          height: 13px;                                   
+          font-family: 'Roboto', sans-serif;
+          font-size: 10px;
           font-weight: bold;
-          text-align: center;
-          vertical-align: super;  
-          line-height: 11px;
-          color: #383838;
-          content: "2";
-          @include border-radius(50%) 
-      } */
-  /* &::before {
-      position:absolute;
-      top:-5px;
-      right: -4px;
-      display: block;
-      width: 13px;
-      height: 13px;                                   
-      background-color: #09e903;
-      border: 2px solid #6c6c6c;
-      content: "";
-      @include border-radius(50%);
-  }                           
-  &::after {
-      position:absolute;
-      top:-6px;
-      right: -4px;
-      display: block;
-      width: 13px;
-      height: 13px;                                   
-      font-family: 'Roboto', sans-serif;
-      font-size: 10px;
-      font-weight: bold;
-      text-align: center;                                     
-      content: '2';   
-      color: #000000;                                 
-  }        */
+          text-align: center;                                     
+          content: '2';   
+          color: #000000;                                 
+      }        */
 }
-/* line 162, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification {
+/* line 160, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) .notification {
   display: block;
   width: 14px;
   height: 14px;
   padding: 0;
 }
-/* line 167, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification .svg-notification {
+/* line 165, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) .notification .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 170, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification .svg-notification path {
+/* line 168, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) .notification .svg-notification path {
   fill: #4ccde8;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 176, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification .svg-notification:hover path {
+/* line 174, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) .notification .svg-notification:hover path {
   fill: #ffffff;
 }
-/* line 182, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification-active {
+/* line 180, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) .notification-active {
   position: relative;
   display: block;
   width: 14px;
   height: 14px;
   padding: 0;
 }
-/* line 188, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification-active .svg-notification {
+/* line 186, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) .notification-active .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 191, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification-active .svg-notification path {
+/* line 189, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) .notification-active .svg-notification path {
   fill: #09e903;
 }
-/* line 195, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification-active .svg-notification:hover path {
+/* line 193, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) .notification-active .svg-notification:hover path {
   fill: #09e903;
 }
-/* line 200, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:nth-child(4) .notification-active sup {
+/* line 198, ../scss/widgets/_header.scss */
+header .rubber .information .options li:nth-child(4) .notification-active sup {
   position: absolute;
   top: -7px;
   right: -6px;
@@ -5852,13 +5824,13 @@ header .background-header .rubber .information .options li:nth-child(4) .notific
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 280, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:last-child {
+/* line 246, ../scss/widgets/_header.scss */
+header .rubber .information .options li:last-child {
   width: 56px;
   padding-top: 0px;
 }
-/* line 283, ../scss/widgets/_header.scss */
-header .background-header .rubber .information .options li:last-child a {
+/* line 249, ../scss/widgets/_header.scss */
+header .rubber .information .options li:last-child a {
   width: 56px;
   height: 56px;
   background-image: url(../../../client/images/header/person.png);
