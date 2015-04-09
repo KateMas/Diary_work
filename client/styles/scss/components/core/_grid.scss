@@ -28,7 +28,7 @@
 				}				
 			}
 			.cus-col-sm-#{$i} {
-				@include breakpoint(small){
+				@include breakpoint(small) {
 					@include make-sm-column($i, 20px);
 				}					
 			}

@@ -8,8 +8,7 @@ header {
         .menu {
             float: left;
             width: 56px;
-            height: 56px;
-            text-align: center;                 
+            height: 56px;              
             @include user-select(none);                             
             button {
                 width: 56px;
@@ -33,7 +32,7 @@ header {
             }
         }
         .information {
-            height: 56px;
+            //height: 56px;
             background-color: rgba(#636363,0.7);
             text-align: center;
             @include clearfix;

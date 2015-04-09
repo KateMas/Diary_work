@@ -3700,7 +3700,6 @@ header .rubber .menu {
   float: left;
   width: 56px;
   height: 56px;
-  text-align: center;
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -3708,7 +3707,7 @@ header .rubber .menu {
   user-select: none;
   cursor: default;
 }
-/* line 14, ../scss/widgets/_header.scss */
+/* line 13, ../scss/widgets/_header.scss */
 header .rubber .menu button {
   width: 56px;
   height: 56px;
@@ -3725,17 +3724,16 @@ header .rubber .menu button {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 27, ../scss/widgets/_header.scss */
+/* line 26, ../scss/widgets/_header.scss */
 header .rubber .menu button:hover {
   background-color: #4ccde8;
 }
-/* line 31, ../scss/widgets/_header.scss */
+/* line 30, ../scss/widgets/_header.scss */
 header .rubber .menu .collapsed {
   background-color: transparent;
 }
-/* line 35, ../scss/widgets/_header.scss */
+/* line 34, ../scss/widgets/_header.scss */
 header .rubber .information {
-  height: 56px;
   background-color: rgba(99, 99, 99, 0.7);
   text-align: center;
 }
@@ -3748,7 +3746,7 @@ header .rubber .information:before, header .rubber .information:after {
 header .rubber .information:after {
   clear: both;
 }
-/* line 40, ../scss/widgets/_header.scss */
+/* line 39, ../scss/widgets/_header.scss */
 header .rubber .information .diary {
   float: left;
   padding-left: 20px;
@@ -3757,27 +3755,27 @@ header .rubber .information .diary {
   font-weight: bold;
   line-height: 56px;
 }
-/* line 47, ../scss/widgets/_header.scss */
+/* line 46, ../scss/widgets/_header.scss */
 header .rubber .information .diary a {
   color: #ffffff;
 }
-/* line 49, ../scss/widgets/_header.scss */
+/* line 48, ../scss/widgets/_header.scss */
 header .rubber .information .diary a:focus {
   background-color: transparent;
 }
-/* line 52, ../scss/widgets/_header.scss */
+/* line 51, ../scss/widgets/_header.scss */
 header .rubber .information .diary a:hover {
   background-color: transparent;
   border: none;
   text-decoration: underline;
 }
-/* line 59, ../scss/widgets/_header.scss */
+/* line 58, ../scss/widgets/_header.scss */
 header .rubber .information .date {
   display: inline-block;
   height: 56px;
   line-height: 56px;
 }
-/* line 63, ../scss/widgets/_header.scss */
+/* line 62, ../scss/widgets/_header.scss */
 header .rubber .information .date a {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -3788,21 +3786,21 @@ header .rubber .information .date a {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 70, ../scss/widgets/_header.scss */
+/* line 69, ../scss/widgets/_header.scss */
 header .rubber .information .date a:hover {
   text-decoration: underline;
 }
-/* line 73, ../scss/widgets/_header.scss */
+/* line 72, ../scss/widgets/_header.scss */
 header .rubber .information .date a:first-child {
   margin-right: 8px;
 }
-/* line 78, ../scss/widgets/_header.scss */
+/* line 77, ../scss/widgets/_header.scss */
 header .rubber .information .options {
   float: right;
   margin-bottom: 0;
   font-size: 0;
 }
-/* line 82, ../scss/widgets/_header.scss */
+/* line 81, ../scss/widgets/_header.scss */
 header .rubber .information .options li {
   display: inline-block;
   width: 34px;
@@ -3811,26 +3809,26 @@ header .rubber .information .options li {
   outline: none;
   vertical-align: middle;
 }
-/* line 89, ../scss/widgets/_header.scss */
+/* line 88, ../scss/widgets/_header.scss */
 header .rubber .information .options li a {
   width: 14px;
   height: 14px;
   padding: 0;
 }
-/* line 93, ../scss/widgets/_header.scss */
+/* line 92, ../scss/widgets/_header.scss */
 header .rubber .information .options li a:hover {
   background: none;
 }
-/* line 96, ../scss/widgets/_header.scss */
+/* line 95, ../scss/widgets/_header.scss */
 header .rubber .information .options li a:focus {
   background: none;
 }
-/* line 101, ../scss/widgets/_header.scss */
+/* line 100, ../scss/widgets/_header.scss */
 header .rubber .information .options li:first-child .svg-add {
   width: 14px;
   height: 14px;
 }
-/* line 104, ../scss/widgets/_header.scss */
+/* line 103, ../scss/widgets/_header.scss */
 header .rubber .information .options li:first-child .svg-add polygon {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -3838,11 +3836,11 @@ header .rubber .information .options li:first-child .svg-add polygon {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 110, ../scss/widgets/_header.scss */
+/* line 109, ../scss/widgets/_header.scss */
 header .rubber .information .options li:first-child .svg-add:hover polygon {
   fill: #ffffff;
 }
-/* line 117, ../scss/widgets/_header.scss */
+/* line 116, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(2) .svg-month {
   width: 14px;
   height: 14px;
@@ -3852,16 +3850,16 @@ header .rubber .information .options li:nth-child(2) .svg-month {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 123, ../scss/widgets/_header.scss */
+/* line 122, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(2) .svg-month:hover {
   fill: #ffffff;
 }
-/* line 129, ../scss/widgets/_header.scss */
+/* line 128, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(3) .svg-search {
   width: 14px;
   height: 14px;
 }
-/* line 132, ../scss/widgets/_header.scss */
+/* line 131, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(3) .svg-search .path-color {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -3869,16 +3867,16 @@ header .rubber .information .options li:nth-child(3) .svg-search .path-color {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 138, ../scss/widgets/_header.scss */
+/* line 137, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(3) .svg-search:hover .path-color {
   fill: #ffffff;
 }
-/* line 146, ../scss/widgets/_header.scss */
+/* line 145, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 149, ../scss/widgets/_header.scss */
+/* line 148, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification .svg-notification path {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -3886,28 +3884,28 @@ header .rubber .information .options li:nth-child(4) .notification .svg-notifica
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 155, ../scss/widgets/_header.scss */
+/* line 154, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification .svg-notification:hover path {
   fill: #ffffff;
 }
-/* line 161, ../scss/widgets/_header.scss */
+/* line 160, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active {
   position: relative;
 }
-/* line 163, ../scss/widgets/_header.scss */
+/* line 162, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 166, ../scss/widgets/_header.scss */
+/* line 165, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active .svg-notification path {
   fill: #09e903;
 }
-/* line 170, ../scss/widgets/_header.scss */
+/* line 169, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active .svg-notification:hover path {
   fill: #09e903;
 }
-/* line 175, ../scss/widgets/_header.scss */
+/* line 174, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active sup {
   position: absolute;
   top: -7px;
@@ -3929,12 +3927,12 @@ header .rubber .information .options li:nth-child(4) .notification-active sup {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 196, ../scss/widgets/_header.scss */
+/* line 195, ../scss/widgets/_header.scss */
 header .rubber .information .options li:last-child {
   width: 56px;
   padding-top: 0px;
 }
-/* line 199, ../scss/widgets/_header.scss */
+/* line 198, ../scss/widgets/_header.scss */
 header .rubber .information .options li:last-child .person {
   width: 56px;
   height: 56px;
@@ -3944,6 +3942,12 @@ header .rubber .information .options li:last-child .person {
 /* line 1, ../scss/layouts/_gallery.scss */
 .gallery {
   padding-top: 95px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 @media (min-width: 1200px) {
   /* line 1, ../scss/layouts/_gallery.scss */
@@ -3951,7 +3955,7 @@ header .rubber .information .options li:last-child .person {
     padding-top: 85px;
   }
 }
-/* line 6, ../scss/layouts/_gallery.scss */
+/* line 7, ../scss/layouts/_gallery.scss */
 .gallery .image {
   overflow: hidden;
   width: 100%;
@@ -3963,12 +3967,12 @@ header .rubber .information .options li:last-child .person {
   background-repeat: no-repeat;
 }
 @media (min-width: 1200px) {
-  /* line 6, ../scss/layouts/_gallery.scss */
+  /* line 7, ../scss/layouts/_gallery.scss */
   .gallery .image {
     margin-top: 30px;
   }
 }
-/* line 20, ../scss/layouts/_gallery.scss */
+/* line 21, ../scss/layouts/_gallery.scss */
 .gallery .first-row .add-photo {
   position: relative;
   width: 100%;
@@ -3983,12 +3987,12 @@ header .rubber .information .options li:last-child .person {
   line-height: 141px;
 }
 @media (min-width: 1200px) {
-  /* line 20, ../scss/layouts/_gallery.scss */
+  /* line 21, ../scss/layouts/_gallery.scss */
   .gallery .first-row .add-photo {
     margin-top: 30px;
   }
 }
-/* line 35, ../scss/layouts/_gallery.scss */
+/* line 36, ../scss/layouts/_gallery.scss */
 .gallery .first-row .add-photo a {
   text-decoration: none;
   color: #ffffff;
@@ -3997,15 +4001,15 @@ header .rubber .information .options li:last-child .person {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 40, ../scss/layouts/_gallery.scss */
+/* line 41, ../scss/layouts/_gallery.scss */
 .gallery .first-row .add-photo a:hover {
   color: #636363;
 }
-/* line 43, ../scss/layouts/_gallery.scss */
+/* line 44, ../scss/layouts/_gallery.scss */
 .gallery .first-row .add-photo a b {
   font-weight: bold;
 }
-/* line 47, ../scss/layouts/_gallery.scss */
+/* line 48, ../scss/layouts/_gallery.scss */
 .gallery .first-row .add-photo::before {
   position: absolute;
   top: -12px;
@@ -4020,7 +4024,7 @@ header .rubber .information .options li:last-child .person {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 58, ../scss/layouts/_gallery.scss */
+/* line 59, ../scss/layouts/_gallery.scss */
 .gallery .first-row .add-photo::after {
   position: absolute;
   top: -9px;
@@ -4033,16 +4037,16 @@ header .rubber .information .options li:last-child .person {
   background-repeat: no-repeat;
   content: "";
 }
-/* line 73, ../scss/layouts/_gallery.scss */
+/* line 74, ../scss/layouts/_gallery.scss */
 .gallery .title-for-photo figure {
   position: relative;
 }
-/* line 76, ../scss/layouts/_gallery.scss */
+/* line 77, ../scss/layouts/_gallery.scss */
 .gallery .title-for-photo figure:hover figcaption {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-/* line 80, ../scss/layouts/_gallery.scss */
+/* line 81, ../scss/layouts/_gallery.scss */
 .gallery .title-for-photo figure figcaption {
   position: absolute;
   top: 0px;
@@ -4065,7 +4069,7 @@ header .rubber .information .options li:last-child .person {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 93, ../scss/layouts/_gallery.scss */
+/* line 94, ../scss/layouts/_gallery.scss */
 .gallery .title-for-photo figure figcaption h3 {
   overflow: hidden;
   margin: 0px;
@@ -4074,7 +4078,6 @@ header .rubber .information .options li:last-child .person {
   font-weight: 100;
   text-overflow: ellipsis;
   white-space: nowrap;
-  word-wrap: break-word;
   color: #ffffff;
 }
 /* line 104, ../scss/layouts/_gallery.scss */
