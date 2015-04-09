@@ -3746,7 +3746,7 @@ header .rubber .information:before, header .rubber .information:after {
 header .rubber .information:after {
   clear: both;
 }
-/* line 39, ../scss/widgets/_header.scss */
+/* line 38, ../scss/widgets/_header.scss */
 header .rubber .information .diary {
   float: left;
   padding-left: 20px;
@@ -3755,27 +3755,27 @@ header .rubber .information .diary {
   font-weight: bold;
   line-height: 56px;
 }
-/* line 46, ../scss/widgets/_header.scss */
+/* line 45, ../scss/widgets/_header.scss */
 header .rubber .information .diary a {
   color: #ffffff;
 }
-/* line 48, ../scss/widgets/_header.scss */
+/* line 47, ../scss/widgets/_header.scss */
 header .rubber .information .diary a:focus {
   background-color: transparent;
 }
-/* line 51, ../scss/widgets/_header.scss */
+/* line 50, ../scss/widgets/_header.scss */
 header .rubber .information .diary a:hover {
   background-color: transparent;
   border: none;
   text-decoration: underline;
 }
-/* line 58, ../scss/widgets/_header.scss */
+/* line 57, ../scss/widgets/_header.scss */
 header .rubber .information .date {
   display: inline-block;
   height: 56px;
   line-height: 56px;
 }
-/* line 62, ../scss/widgets/_header.scss */
+/* line 61, ../scss/widgets/_header.scss */
 header .rubber .information .date a {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -3786,21 +3786,21 @@ header .rubber .information .date a {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 69, ../scss/widgets/_header.scss */
+/* line 68, ../scss/widgets/_header.scss */
 header .rubber .information .date a:hover {
   text-decoration: underline;
 }
-/* line 72, ../scss/widgets/_header.scss */
+/* line 71, ../scss/widgets/_header.scss */
 header .rubber .information .date a:first-child {
   margin-right: 8px;
 }
-/* line 77, ../scss/widgets/_header.scss */
+/* line 76, ../scss/widgets/_header.scss */
 header .rubber .information .options {
   float: right;
   margin-bottom: 0;
   font-size: 0;
 }
-/* line 81, ../scss/widgets/_header.scss */
+/* line 80, ../scss/widgets/_header.scss */
 header .rubber .information .options li {
   display: inline-block;
   width: 34px;
@@ -3809,26 +3809,26 @@ header .rubber .information .options li {
   outline: none;
   vertical-align: middle;
 }
-/* line 88, ../scss/widgets/_header.scss */
+/* line 87, ../scss/widgets/_header.scss */
 header .rubber .information .options li a {
   width: 14px;
   height: 14px;
   padding: 0;
 }
-/* line 92, ../scss/widgets/_header.scss */
+/* line 91, ../scss/widgets/_header.scss */
 header .rubber .information .options li a:hover {
   background: none;
 }
-/* line 95, ../scss/widgets/_header.scss */
+/* line 94, ../scss/widgets/_header.scss */
 header .rubber .information .options li a:focus {
   background: none;
 }
-/* line 100, ../scss/widgets/_header.scss */
+/* line 99, ../scss/widgets/_header.scss */
 header .rubber .information .options li:first-child .svg-add {
   width: 14px;
   height: 14px;
 }
-/* line 103, ../scss/widgets/_header.scss */
+/* line 102, ../scss/widgets/_header.scss */
 header .rubber .information .options li:first-child .svg-add polygon {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -3836,11 +3836,11 @@ header .rubber .information .options li:first-child .svg-add polygon {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 109, ../scss/widgets/_header.scss */
+/* line 108, ../scss/widgets/_header.scss */
 header .rubber .information .options li:first-child .svg-add:hover polygon {
   fill: #ffffff;
 }
-/* line 116, ../scss/widgets/_header.scss */
+/* line 115, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(2) .svg-month {
   width: 14px;
   height: 14px;
@@ -3850,16 +3850,16 @@ header .rubber .information .options li:nth-child(2) .svg-month {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 122, ../scss/widgets/_header.scss */
+/* line 121, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(2) .svg-month:hover {
   fill: #ffffff;
 }
-/* line 128, ../scss/widgets/_header.scss */
+/* line 127, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(3) .svg-search {
   width: 14px;
   height: 14px;
 }
-/* line 131, ../scss/widgets/_header.scss */
+/* line 130, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(3) .svg-search .path-color {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -3867,16 +3867,16 @@ header .rubber .information .options li:nth-child(3) .svg-search .path-color {
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 137, ../scss/widgets/_header.scss */
+/* line 136, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(3) .svg-search:hover .path-color {
   fill: #ffffff;
 }
-/* line 145, ../scss/widgets/_header.scss */
+/* line 144, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 148, ../scss/widgets/_header.scss */
+/* line 147, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification .svg-notification path {
   fill: #4ccde8;
   -webkit-transition-property: all;
@@ -3884,28 +3884,28 @@ header .rubber .information .options li:nth-child(4) .notification .svg-notifica
   -webkit-transition-duration: 200ms;
   transition-duration: 200ms;
 }
-/* line 154, ../scss/widgets/_header.scss */
+/* line 153, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification .svg-notification:hover path {
   fill: #ffffff;
 }
-/* line 160, ../scss/widgets/_header.scss */
+/* line 159, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active {
   position: relative;
 }
-/* line 162, ../scss/widgets/_header.scss */
+/* line 161, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active .svg-notification {
   width: 14px;
   height: 14px;
 }
-/* line 165, ../scss/widgets/_header.scss */
+/* line 164, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active .svg-notification path {
   fill: #09e903;
 }
-/* line 169, ../scss/widgets/_header.scss */
+/* line 168, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active .svg-notification:hover path {
   fill: #09e903;
 }
-/* line 174, ../scss/widgets/_header.scss */
+/* line 173, ../scss/widgets/_header.scss */
 header .rubber .information .options li:nth-child(4) .notification-active sup {
   position: absolute;
   top: -7px;
@@ -3927,12 +3927,12 @@ header .rubber .information .options li:nth-child(4) .notification-active sup {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 195, ../scss/widgets/_header.scss */
+/* line 194, ../scss/widgets/_header.scss */
 header .rubber .information .options li:last-child {
   width: 56px;
   padding-top: 0px;
 }
-/* line 198, ../scss/widgets/_header.scss */
+/* line 197, ../scss/widgets/_header.scss */
 header .rubber .information .options li:last-child .person {
   width: 56px;
   height: 56px;
