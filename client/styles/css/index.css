@@ -3978,8 +3978,8 @@ header .rubber .information .options li:last-child .person {
     margin-top: 30px;
   }
 }
-/* line 26, ../scss/layouts/_gallery.scss */
-.gallery .first-row .add-photo {
+/* line 25, ../scss/layouts/_gallery.scss */
+.gallery .add-photo {
   position: relative;
   width: 100%;
   height: 141px;
@@ -3993,13 +3993,13 @@ header .rubber .information .options li:last-child .person {
   line-height: 141px;
 }
 @media (min-width: 1200px) {
-  /* line 26, ../scss/layouts/_gallery.scss */
-  .gallery .first-row .add-photo {
+  /* line 25, ../scss/layouts/_gallery.scss */
+  .gallery .add-photo {
     margin-top: 30px;
   }
 }
-/* line 41, ../scss/layouts/_gallery.scss */
-.gallery .first-row .add-photo a {
+/* line 40, ../scss/layouts/_gallery.scss */
+.gallery .add-photo a {
   text-decoration: none;
   color: #ffffff;
   -webkit-transition-property: all;
@@ -4007,16 +4007,16 @@ header .rubber .information .options li:last-child .person {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 46, ../scss/layouts/_gallery.scss */
-.gallery .first-row .add-photo a:hover {
+/* line 45, ../scss/layouts/_gallery.scss */
+.gallery .add-photo a:hover {
   color: #636363;
 }
-/* line 49, ../scss/layouts/_gallery.scss */
-.gallery .first-row .add-photo a b {
+/* line 48, ../scss/layouts/_gallery.scss */
+.gallery .add-photo a b {
   font-weight: bold;
 }
-/* line 53, ../scss/layouts/_gallery.scss */
-.gallery .first-row .add-photo::before {
+/* line 52, ../scss/layouts/_gallery.scss */
+.gallery .add-photo::before {
   position: absolute;
   top: -12px;
   left: -12px;
@@ -4030,8 +4030,8 @@ header .rubber .information .options li:last-child .person {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 64, ../scss/layouts/_gallery.scss */
-.gallery .first-row .add-photo::after {
+/* line 63, ../scss/layouts/_gallery.scss */
+.gallery .add-photo::after {
   position: absolute;
   top: -9px;
   left: -9px;
@@ -4043,16 +4043,16 @@ header .rubber .information .options li:last-child .person {
   background-repeat: no-repeat;
   content: "";
 }
-/* line 79, ../scss/layouts/_gallery.scss */
+/* line 77, ../scss/layouts/_gallery.scss */
 .gallery .title-for-photo figure {
   position: relative;
 }
-/* line 82, ../scss/layouts/_gallery.scss */
+/* line 80, ../scss/layouts/_gallery.scss */
 .gallery .title-for-photo figure:hover figcaption {
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
-/* line 86, ../scss/layouts/_gallery.scss */
+/* line 84, ../scss/layouts/_gallery.scss */
 .gallery .title-for-photo figure figcaption {
   position: absolute;
   top: 0px;
@@ -4075,7 +4075,7 @@ header .rubber .information .options li:last-child .person {
   -webkit-transition-duration: 400ms;
   transition-duration: 400ms;
 }
-/* line 99, ../scss/layouts/_gallery.scss */
+/* line 97, ../scss/layouts/_gallery.scss */
 .gallery .title-for-photo figure figcaption h3 {
   overflow: hidden;
   margin: 0px;
@@ -4086,7 +4086,7 @@ header .rubber .information .options li:last-child .person {
   white-space: nowrap;
   color: #ffffff;
 }
-/* line 109, ../scss/layouts/_gallery.scss */
+/* line 107, ../scss/layouts/_gallery.scss */
 .gallery .title-for-photo figure figcaption time {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;

@@ -45,7 +45,7 @@ header {
                 a {
                     color: #ffffff;
                     &:focus {
-                            background-color: transparent;
+                        background-color: transparent;
                         }
                     &:hover {
                         background-color: transparent;
@@ -140,7 +140,7 @@ header {
                         }  
                     }
                     &:nth-child(4) {
-                        .notification {                          
+                        .notification {                  
                             .svg-notification {
                                 width: 14px;
                                 height: 14px;
@@ -157,8 +157,8 @@ header {
                             }
                         } 
                         .notification-active {
-                            position: relative;                           
-                            .svg-notification {                                 
+                            position: relative;          
+                            .svg-notification {          
                                 width: 14px;
                                 height: 14px;
                                 path {
@@ -176,10 +176,10 @@ header {
                                 right: -6px;
                                 display: block;
                                 width: 15px;
-                                height: 15px;                                   
+                                height: 15px;            
                                 background-color: #09e903;
                                 border: 2px solid #6c6c6c;  
-                                font-family: 'Roboto', sans-serif;                              
+                                font-family: 'Roboto', sans-serif;                     
                                 font-size: 10px;                                    
                                 font-weight: bold;
                                 text-align: center;
